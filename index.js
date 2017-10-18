@@ -151,6 +151,10 @@ function render(resumeObject) {
         });
     }
 
+    if (resumeObject.projects && resumeObject.projects.length) {
+        resumeObject.projectsBool = true;
+    }
+
     if (resumeObject.education && resumeObject.education.length) {
         if (resumeObject.education[0].institution) {
             resumeObject.educationBool = true;
